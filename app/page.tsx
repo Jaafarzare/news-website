@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Category from "./components/Category";
-import Search from "./components/Search";
 
 interface Source {
   id: string | null;
@@ -55,6 +54,7 @@ export default function Home() {
             return (
               <li key={index} className="bg-white shadow-lg rounded-lg p-4">
                 {article.urlToImage && (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={article.urlToImage}
                     alt={article.title}

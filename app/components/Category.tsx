@@ -112,6 +112,7 @@ export default function Category() {
               {articles.map((article, index) => (
                 <li key={index} className="bg-white shadow-lg rounded-lg p-4">
                   {article.urlToImage && (
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={article.urlToImage}
                       alt={article.title}
